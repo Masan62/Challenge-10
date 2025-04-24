@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog & Album Viewer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="screen.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Blog & Album Viewer</h1>
+    </div>
+    <p>Fetching posts, comments, and albums using JSONPlaceholder API</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="section-title">
+        <img src="blog.png" alt="Blog Icon" class="icon">
+        <h2>Blog Posts</h2>
+      </div>
+      <div id="post-container"></div>
+    </div>
+  </main>
+
+  <section id="albums">
+    <div class="container">
+      <div class="section-title">
+        <img src="album.png" alt="Album Icon" class="icon">
+        <h2>Album Gallery</h2>
+      </div>
+      <div id="album-container"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Powered by JSONPlaceholder API – For Learning Purposes</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
 </html>
